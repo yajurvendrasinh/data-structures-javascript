@@ -128,3 +128,76 @@ function find (data) {
 }
 
 
+function size (node) {
+
+	if (node.data !== null) {
+		return (size(node.left) + 1 + size(node.right));
+	}
+	else {
+		return null;
+	}
+}
+
+function maxDepth (node) {
+	if(node.data === null) {
+		return null;
+	}
+	else {
+		var leftSubDepth;
+		var rightSubDepth;
+
+		leftSubDepth = maxDepth(node.left);
+		rightSubDepth = maxDepth(node.right);
+
+		if (leftSubDepth > rightSubDepth) {
+			return (leftSubDepth + 1);
+		}
+		else {
+			return (rightSubDepth + 1);
+		}
+	}
+}
+
+/*Removing node*/
+
+function remove(data) {
+	root = removeNode(this.root, data);
+}
+
+function removeNode (node, data) {
+	if (node === null) {
+		return null;
+	}
+
+	if(data == node.data) {
+		if(node.left === null && node.right === null) {
+			return null;
+		}
+
+		if (node.left === null) {
+			return node.right;
+		}
+
+		if (node.right === null) {
+			return node.left;
+		}
+
+		var temp = getSmallest(node.right);
+		node.data = temp.data;
+		node.right = removeNode(node.right, temp.data);
+		return node;
+	}
+
+	else if (data < node.data) {
+		node.left = removeNode(node.left, data);
+		return node;
+	}
+
+	else {
+		node.right = removeNode(node.right, data);
+		return node;
+	}
+}
+
+
+
