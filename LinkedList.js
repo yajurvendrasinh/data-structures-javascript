@@ -25,7 +25,7 @@ function Node(element) {
  	this.show = show;
  }
 
- function find() {
+ function find(item) {
  	var currentNode = this.head;
  	while (currentNode.element != item) {
  		currentNode = currentNode.next;
@@ -34,7 +34,7 @@ function Node(element) {
  	return currentNode;
  }
 
- function insert(newElement, item) {
+ function insert(newElement, item) { // basically inserting after finding the 'item' value
  	var newNode = new Node(newElement);
  	var current = this.find(item);
 

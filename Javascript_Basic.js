@@ -60,3 +60,40 @@ var myObj = new Object(); // using the object constructor to create a new object
        
 // Now, use the chaninable methods with expressiveness:
        userController.findUser("test2@test2.com").formatName().createLayout().displayUser();
+
+
+/*JAVASCRIPT closures
+ * closure allows better variable scope handling
+ * when an inner function has access to the variable  of outer function, it can be defined as closure
+ * closure have access to three scopes : its own, the outer function's variables, and the global scope's variables
+ */
+
+
+ /*JAVASCRIPT 'this' 
+  * its working with the objects and bind
+  */
+
+  var myTestObject = {
+  	name : 'Yajur',
+  	talk : function(){
+  		console.log("My name is" + this.name);
+  	}
+  };
+
+
+  myTestObject.talk(); // will log "My name is Yajur"
+
+
+  var myNewTestFunction = myTestObject.talk();
+
+  myNewTestFunction(); // will log undefined
+
+  // Why ??? becaus 'this' of the myNewTestFunction is not bound to the 'this' of myTestObject
+  // to fix this we need to use bind so that 'this' will work as we assume it to
+
+
+  var myAnotherNewTestFunction = myNewTestFunction.bind(myTestObject);
+
+  myAnotherNewTestFunction(); // this will log "My name is Yajur"
+
+
