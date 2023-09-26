@@ -1,1 +1,0 @@
-- Implementing data structures in plain old JavaScript

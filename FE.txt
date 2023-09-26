@@ -1,0 +1,32 @@
+Preparation Strategy:
+
+0. HTML CSS Refresher
+    - https://learn.shayhowe.com/
+
+1. Javascript Refresher
+    - https://javascript.info/
+    - MDN
+    - Javascript Ninja ( or any book if you want to go deeper )
+
+
+2. React Refresher
+    - React Hooks
+    - React Class Components
+
+3. LeetCode
+    - follow : https://neetcode.io/roadmap
+    - Blind 75 : https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
+    - Interview coding patterns : https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
+
+4. System Design:
+    - https://www.greatfrontend.com/front-end-interview-guidebook/system-design
+    - Front End : https://medium.com/@shivambh28/a-comprehensive-guide-to-mastering-frontend-system-design-interviews-8d013e106397
+
+Resources:
+- https://bigfrontend.dev/
+- https://www.greatfrontend.com/front-end-interview-guidebook/system-design
+- https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/main
+- https://www.freecodecamp.org/news/javascript-interview-prep-cheatsheet/
+- https://medium.com/@shivambh28/75-most-frequently-asked-frontend-javascript-interview-questions-dc3b63fbf73e
+- https://medium.com/@shivambh28/frontend-system-design-design-google-calendar-d63004cd539a
+- https://medium.com/@yurii.h.dev/design-patterns-for-react-applications-8f6b352de489
