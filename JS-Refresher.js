@@ -34,3 +34,33 @@ console.log(statement); // 'Hello John'
 visitorName = prompt(`What is your name`);
 question = confirm('Are you 18 years old')
 alert ('your name is : ' + `${visitorName}` + question);
+
+/** 
+* Write the code which asks for a login with prompt.
+
+* If the visitor enters "Admin", then prompt for a password, 
+* if the input is an empty line or Esc – show “Canceled”, 
+* if it’s another string – then show “I don’t know you”.
+
+The password is checked as follows:
+
+* If it equals “TheMaster”, then show “Welcome!”,
+* Another string – show “Wrong password”,
+* For an empty string or cancelled input, show “Canceled”
+
+**/ 
+
+loginUser = prompt('Enter your role for login');
+
+
+if (loginUser === 'Admin') {
+  adminPassword = prompt ('Enter admin password');
+  
+  (adminPassword === 'TheMaster') ? alert('Welcome') : alert('Wrong Password');
+}
+else if (typeof loginUser === 'string') {
+  alert('I don’t know you')
+}
+else {
+  alert('Cancled')
+}
