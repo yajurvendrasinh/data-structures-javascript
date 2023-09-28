@@ -31,5 +31,6 @@ console.log(statement); // 'Hello John'
 
 // Create a web-page that asks for a name and outputs it. (use alert, confirm, prompt)
 
-question = prompt(`What is your name`);
-alert ('your name is :' + `${question}`);
+visitorName = prompt(`What is your name`);
+question = confirm('Are you 18 years old')
+alert ('your name is : ' + `${visitorName}` + question);
