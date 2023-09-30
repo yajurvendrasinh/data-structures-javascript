@@ -64,3 +64,59 @@ else if (typeof loginUser === 'string') {
 else {
   alert('Cancled')
 }
+
+// LOOPS:
+/**
+ * Use the for loop to output even numbers from 2 to 10.
+ */
+
+for (let i = 2; i <= 10; i++) {
+    if (i % 2 == 0) {
+      console.log( i );
+    }
+  }
+
+//   nullish coalescing operator (??) vs OR (||)
+
+console.log(12 || "not found") // 12
+console.log(0  || "not found") // "not found"
+console.log(""     || "not found") // "not found"
+console.log(false || "not found") // "not found"
+console.log(undefined || "not found") // "not found"
+console.log(null      || "not found") // "not found"
+
+console.log(12 ?? "not found") // 12
+console.log(0  ?? "not found") // 0
+console.log(""     ?? "not found") // ""
+console.log(false ?? "not found") // false
+console.log(undefined ?? "not found") // "not found"
+console.log(null      ?? "not found") // "not found"
+
+// ================================= //
+/**
+ * FUNCTION NAMING, ONE FUNCTON ONE ACTION
+ * Function starting with…
+
+    "get…" – return a value,
+    "calc…" – calculate something,
+    "create…" – create something,
+    "check…" – check something and return a boolean, etc.
+
+    Examples of such names:
+
+    showMessage(..)     // shows a message
+    getAge(..)          // returns the age (gets it somehow)
+    calcSum(..)         // calculates a sum and returns the result
+    createForm(..)      // creates a form (and usually returns it)
+    checkPermission(..) // checks a permission, returns true/false
+ */
+
+    // Function Declaration
+function sum(a, b) {
+    return a + b;
+  }
+
+  // Function Expression
+let sum = function(a, b) {
+    return a + b;
+  };
