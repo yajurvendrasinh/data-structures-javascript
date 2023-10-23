@@ -7,7 +7,7 @@ Copy the value from name to admin.
 Show the value of admin using alert (must output “John”).
 */
 
-let admin
+let admin;
 let name = 'John';
 
 admin = name;
@@ -21,9 +21,9 @@ How would you name that variable?
  */
 
 let ourPlanetName = 'EARTH';
-let currentUser = "John";
+let currentUser = 'John';
 
-// String declarations 
+// String declarations
 let greetings = 'Hello';
 
 let statement = `${greetings} ${name}`;
@@ -32,8 +32,8 @@ console.log(statement); // 'Hello John'
 // Create a web-page that asks for a name and outputs it. (use alert, confirm, prompt)
 
 visitorName = prompt(`What is your name`);
-question = confirm('Are you 18 years old')
-alert ('your name is : ' + `${visitorName}` + question);
+question = confirm('Are you 18 years old');
+alert('your name is : ' + `${visitorName}` + question);
 
 /** 
 * Write the code which asks for a login with prompt.
@@ -48,21 +48,18 @@ The password is checked as follows:
 * Another string – show “Wrong password”,
 * For an empty string or cancelled input, show “Canceled”
 
-**/ 
+**/
 
 loginUser = prompt('Enter your role for login');
 
-
 if (loginUser === 'Admin') {
-  adminPassword = prompt ('Enter admin password');
-  
-  (adminPassword === 'TheMaster') ? alert('Welcome') : alert('Wrong Password');
-}
-else if (typeof loginUser === 'string') {
-  alert('I don’t know you')
-}
-else {
-  alert('Cancled')
+  adminPassword = prompt('Enter admin password');
+
+  adminPassword === 'TheMaster' ? alert('Welcome') : alert('Wrong Password');
+} else if (typeof loginUser === 'string') {
+  alert('I don’t know you');
+} else {
+  alert('Cancled');
 }
 
 // LOOPS:
@@ -71,26 +68,26 @@ else {
  */
 
 for (let i = 2; i <= 10; i++) {
-    if (i % 2 == 0) {
-      console.log( i );
-    }
+  if (i % 2 == 0) {
+    console.log(i);
   }
+}
 
 //   nullish coalescing operator (??) vs OR (||)
 
-console.log(12 || "not found") // 12
-console.log(0  || "not found") // "not found"
-console.log(""     || "not found") // "not found"
-console.log(false || "not found") // "not found"
-console.log(undefined || "not found") // "not found"
-console.log(null      || "not found") // "not found"
+console.log(12 || 'not found'); // 12
+console.log(0 || 'not found'); // "not found"
+console.log('' || 'not found'); // "not found"
+console.log(false || 'not found'); // "not found"
+console.log(undefined || 'not found'); // "not found"
+console.log(null || 'not found'); // "not found"
 
-console.log(12 ?? "not found") // 12
-console.log(0  ?? "not found") // 0
-console.log(""     ?? "not found") // ""
-console.log(false ?? "not found") // false
-console.log(undefined ?? "not found") // "not found"
-console.log(null      ?? "not found") // "not found"
+console.log(12 ?? 'not found'); // 12
+console.log(0 ?? 'not found'); // 0
+console.log('' ?? 'not found'); // ""
+console.log(false ?? 'not found'); // false
+console.log(undefined ?? 'not found'); // "not found"
+console.log(null ?? 'not found'); // "not found"
 
 // ================================= //
 /**
@@ -111,17 +108,17 @@ console.log(null      ?? "not found") // "not found"
     checkPermission(..) // checks a permission, returns true/false
  */
 
-    // Function Declaration
+// Function Declaration
 function sum(a, b) {
-    return a + b;
-  }
+  return a + b;
+}
 
-  // Function Expression
-let sum = function(a, b) {
-    return a + b;
-  };
+// Function Expression
+let sum = function (a, b) {
+  return a + b;
+};
 
-  /**
+/**
    * Write the code, one line for each action:
 
     Create an empty object user.
@@ -131,10 +128,13 @@ let sum = function(a, b) {
     Remove the property name from the object.
    */
 
-    let emptyObj = {};
-    let emptyObjTwo = new Object();
+let emptyObj = {};
+let emptyObjTwo = new Object();
 
-    emptyObj['name'] = "John";
-    emptyObj['name'] = "Pete";
+emptyObj['name'] = 'John';
+emptyObj['name'] = 'Pete';
 
-    delete emptyObj['name'];
+delete emptyObj['name'];
+
+// Javscript Interview Questions
+// https://github.com/sudheerj/javascript-interview-questions
