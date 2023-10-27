@@ -17,7 +17,7 @@ class TableController {
   // with the specified site is checked. "site" is
   // a string.
   getIsSiteCheckboxSelected(site) {
-    if (this.selectAll === 1) return true;
+    if (this.selectAll === CHECKED) return true;
     // if the site exists inthe lis
     if (this.siteMap.has(site)) {
       return Boolean(this.siteMap.get(site).value); // 1 or 0
@@ -79,7 +79,7 @@ class TableController {
   // UI from the server. newSites is an array of strings.
   addSites(newSites) {
     // ???
-    const selectAllState = this.selectAll === 1 ? 1 : 0;
+    const selectAllState = this.selectAll === CHECKED ? 1 : 0;
     newSites.forEach((site) => {
       this.siteMap.set(site, selectAllState);
     });
