@@ -33,7 +33,8 @@ class TableController {
     let counter = 0;
     for (let stateValue of this.siteMap.values) {
       // [0, 1, 0, 1, 1]
-      counter = counter + stateValue;
+      let numStateValue = stateValue === CHECKED ? 1 : 0;
+      counter = counter + numStateValue;
     }
 
     if (counter >= 1 && counter < this.siteMap.size) {
@@ -79,7 +80,7 @@ class TableController {
   // UI from the server. newSites is an array of strings.
   addSites(newSites) {
     // ???
-    const selectAllState = this.selectAll === CHECKED ? 1 : 0;
+    const selectAllState = this.selectAll === CHECKED ? CHECKED : UNCHECKED;
     newSites.forEach((site) => {
       this.siteMap.set(site, selectAllState);
     });
