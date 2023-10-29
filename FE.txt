@@ -30,3 +30,7 @@ Resources:
 - https://medium.com/@shivambh28/75-most-frequently-asked-frontend-javascript-interview-questions-dc3b63fbf73e
 - https://medium.com/@shivambh28/frontend-system-design-design-google-calendar-d63004cd539a
 - https://medium.com/@yurii.h.dev/design-patterns-for-react-applications-8f6b352de489
+
+Interview Experiences:
+
+https://medium.com/@stylus07

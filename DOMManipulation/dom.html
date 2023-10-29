@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <div class="grandparent" id="grandparent">
+      <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+      </div>
+      <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+      </div>
+    </div>
+  </body>
+  <style>
+    .grandparent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      width: 600px;
+      background-color: tomato;
+      border: 5px solid black;
+    }
+    .parent {
+      display: flex;
+      height: 350px;
+      width: 350px;
+      justify-content: center;
+      align-items: center;
+      background-color: greenyellow;
+      border: 5px solid black;
+      margin: 20px 20px;
+    }
+    .child {
+      display: block;
+      height: 100px;
+      width: 100px;
+      background-color: skyblue;
+      border: 5px solid black;
+      margin: 20px 20px;
+    }
+  </style>
+  <script src="dom.js"></script>
+</html>
