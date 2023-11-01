@@ -48,4 +48,6 @@ function flattenObj(input) {
   }
 
   return flattened;
+  x;
 }
+Xxxx;
