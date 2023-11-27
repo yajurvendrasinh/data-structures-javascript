@@ -1,0 +1,31 @@
+.exchange-wrapper {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 200px;
+  width: 300px;
+  border: 1px solid grey;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-item {
+  display: block;
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+.inner-item > input {
+  width: 50%;
+}

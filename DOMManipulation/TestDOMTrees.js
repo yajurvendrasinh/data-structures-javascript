@@ -32,8 +32,7 @@
     </div>
 </div>
 */
-
-function findCorresponding(treeA, treeB, target) {
+function findCorresponding(section, article, img) {
   let stackA = [treeA];
   let stackB = [treeB];
 
@@ -50,8 +49,6 @@ function findCorresponding(treeA, treeB, target) {
   }
 }
 
-const tree1 = document.getElementById('tree1');
-const tree2 = document.getElementById('tree2');
-const target = document.getElementById('target');
-
-findCorresponding(tree1, tree2, target);
+const tree1 = document.getElementById("tree1");
+const tree2 = document.getElementById("tree2");
+const target = document.getElementById("target");

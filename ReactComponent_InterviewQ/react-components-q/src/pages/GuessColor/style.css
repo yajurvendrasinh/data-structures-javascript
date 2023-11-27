@@ -1,0 +1,22 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.color-block {
+  height: 200px;
+  width: 400px;
+  border: 1px solid grey;
+}
+
+.button-row > button {
+  all: unset;
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin: 10px;
+  width: 100px;
+  height: 25px;
+}
