@@ -1,7 +1,10 @@
+// Promise: https://youtu.be/DHvZLI7Db8E?si=BQryRVhf5j9sdbq4
+// CustomPromise: https://youtu.be/1l4wHWQCCIc?si=wiCZuGy5e_0rj-Dw
+
 const STATE = {
-  PENDING: 'pending',
-  FULLFILLED: 'fullfilled',
-  REJECTED: 'rejected',
+  PENDING: "pending",
+  FULLFILLED: "fullfilled",
+  REJECTED: "rejected",
 };
 
 class CustomPromise {
