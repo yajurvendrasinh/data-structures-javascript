@@ -9,3 +9,5 @@ export default function Folder({ folderData }) {
     </div>
   );
 }
+
+// version 2: https://youtu.be/ixgxx_um8r8?si=ajiDxA0LZOLYBlTe

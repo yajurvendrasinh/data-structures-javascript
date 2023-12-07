@@ -33,6 +33,7 @@ export default function Autocomplete() {
       ? setSearchList("")
       : setSearchList(searchedNames);
   }
+  // ///////////////////////////////////////
 
   const searchResult = searchList
     ? searchList.map((search, idx) => {
