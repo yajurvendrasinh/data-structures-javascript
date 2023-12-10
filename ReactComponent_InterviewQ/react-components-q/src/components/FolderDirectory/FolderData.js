@@ -1,6 +1,6 @@
 // Arrow characters to use: ▼ ▶ •
 
-const FolderData = [
+const folderData = [
   {
     id: "1",
     name: "Office Map",
@@ -63,4 +63,8 @@ const FolderData = [
   },
 ];
 
-export default FolderData;
+export function fetchData() {
+  return new Promise((resolve) => {
+    setTimeout(resolve, 100, folderData);
+  });
+}
