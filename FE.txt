@@ -31,6 +31,13 @@ Resources:
 - https://medium.com/@shivambh28/frontend-system-design-design-google-calendar-d63004cd539a
 - https://medium.com/@yurii.h.dev/design-patterns-for-react-applications-8f6b352de489
 
+2025 Resources:
+- https://leetcode.com/discuss/post/6615244/meta-variant-compilation-by-codingwithmi-0pm7/
+- Reddit Post: https://www.reddit.com/r/leetcode/s/9xrBjS3ims
+- https://interviewing.io/blog/how-software-engineering-behavioral-interviews-are-evaluated-meta
+- https://takeuforward.org/system-design/complete-system-design-roadmap-with-videos-for-sdes
+- https://leetcode.com/discuss/post/4428743/meta-onsite-system-design-questions-by-a-zrfh/
+
 Interview Experiences:
 
 https://medium.com/@stylus07
