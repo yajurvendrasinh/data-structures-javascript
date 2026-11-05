@@ -1,20 +1,3 @@
-# Superhuman Senior Design Technologist
-
-## Design Thinking & Prototyping Interview Framework
-
-**Purpose:** Move deliberately from an ambiguous product challenge to a
-focused, working prototype---using AI to accelerate exploration and
-implementation while retaining ownership of product and design
-decisions.
-
-**Working principle:** Think independently first, use AI to expand and
-execute your thinking, then evaluate the result against the user
-problem---not against whether the AI completed the prompt.
-
-------------------------------------------------------------------------
-
-# The six-stage framework
-
 ## 1. FRAME --- Clarify the problem and goal
 
 **Objective:** Understand why the feature matters, whose problem it
